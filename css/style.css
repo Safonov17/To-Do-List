@@ -55,7 +55,9 @@ body {
 }
 
 .todo-lists {
-  margin-top: 20px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .list {
@@ -89,6 +91,7 @@ body {
   height: 16px;
   min-width: 16px;
   accent-color: #4070f4;
+  pointer-events: none;
 }
 .list input:checked ~ .task {
   text-decoration: line-through;
@@ -118,6 +121,7 @@ body {
   border-radius: 4px;
   padding: 6px 12px;
   cursor: pointer;
+  pointer-events: none;
 }
 .clear-btn:hover {
   background-color: #0e4bf1;
